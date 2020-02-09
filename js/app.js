@@ -138,7 +138,7 @@ function myjsapp(peerClient) {
     function appendToHistory(id, message, isSent) {
         if(chatHistory[id]) {
             var hist = chatHistory[id];
-            var fromTxt = isSent ? 'You' : id
+            var fromTxt = isSent ? 'Tú' : id
             var msg = $('<li><b>' + fromTxt + ': </b></li>').append('<span>' + message + '</span')
             hist.append(msg)
                 .scrollTop(hist[0].scrollHeight);            
@@ -151,10 +151,10 @@ function myjsapp(peerClient) {
         peerClient.connectToServerWithId(username);
     }
 
-    // Show Username Modal
+    // Muestra el nombre de usuario en el modal
     var username = cookie.get('username');
     if(username) {
-        $('#user-name').val(username)
+      //  $('#user-name').val(username)
         startPeerClient(username)
     } else {
         $('#getUserNameModal').modal('show')

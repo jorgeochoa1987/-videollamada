@@ -94,7 +94,7 @@ peerapp = (function() {
 
     function peerCallbacks(peer) {
         peer.on('open', function(id) {
-            console.log('My peer ID is: ' + id);
+            console.log('Mi id de conexión es : ' + id);
             console.log(new Date());
             myapp.setPeerId(id);
             fetchOnlinePeers();
