@@ -252,12 +252,10 @@ function myjsapp(peerClient) {
         showVideoCall : function (options) {
             $('#videoCallPanel').modal('show')
             if(options['video'])
-            window.location = ':500/np2/',
                 $('#videoCallPanel .title').text('Video llamada')
                  
 
             else
-            window.location = ':500/np2/',
                 $('#videoCallPanel .title').text('Llamada')
                
         },
