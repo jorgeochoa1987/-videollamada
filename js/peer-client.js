@@ -213,7 +213,7 @@ peerapp = (function() {
                 callback();
         }, function(err) {
             console.log("The following error occurred: " + err.name);
-            alert('Unable to call ' + err.name)
+         //   alert('Unable to call ' + err.name)
         });
     }
 
