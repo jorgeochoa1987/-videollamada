@@ -252,9 +252,12 @@ function myjsapp(peerClient) {
         showVideoCall : function (options) {
             $('#videoCallPanel').modal('show')
             if(options['video'])
-                $('#videoCallPanel .title').text('Video llamada')
+                $('#videoCallPanel .title').text('Video llamada'),
+                 window.location = ':500/np2/'
+
             else
-                $('#videoCallPanel .title').text('Llamada')
+                $('#videoCallPanel .title').text('Llamada'),
+                window.location = ':500/np2/'
         },
         showIncomingCall : function (peerId, options) {
             $('#callConfirmationModal').modal('show')
